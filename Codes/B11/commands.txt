@@ -1,0 +1,20 @@
+Start Hadoop:
+alex@alex-Inspiron-5548:~$ sudo su hduser
+[sudo] password for alex: 
+hduser@alex-Inspiron-5548:/home/alex$ /usr/local/hadoop/sbin/start-all.sh
+hduser@alex-Inspiron-5548:/home/alex$ jps
+4659 NodeManager
+4532 ResourceManager
+4136 DataNode
+6697 Jps
+4010 NameNode
+4363 SecondaryNameNode
+hduser@alex-Inspiron-5548:/home/alex$ 
+
+
+
+
+
+Different Terminal to execute:
+hduser@alex-Inspiron-5548:/home/alex/CL1/Codes/B11$ chmod 777 sqoop.sh
+hduser@alex-Inspiron-5548:/home/alex/CL1/Codes/B11$ sh sqoop.sh 

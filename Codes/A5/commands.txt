@@ -1,0 +1,5 @@
+alex@alex-Inspiron-5548:~/CL1/Codes/A5$ lex A5.l 
+alex@alex-Inspiron-5548:~/CL1/Codes/A5$ yacc -d A5.y
+alex@alex-Inspiron-5548:~/CL1/Codes/A5$ gcc lex.yy.c y.tab.c -w
+alex@alex-Inspiron-5548:~/CL1/Codes/A5$ ./a.out
+

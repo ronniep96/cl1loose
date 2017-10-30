@@ -1,0 +1,8 @@
+alex@alex-Inspiron-5548:~/CL1/Codes/A4$ lex a4.l 
+alex@alex-Inspiron-5548:~/CL1/Codes/A4$ yacc -d a4.y
+a4.y: warning: 8 shift/reduce conflicts [-Wconflicts-sr]
+a4.y: warning: 1 reduce/reduce conflict [-Wconflicts-rr]
+alex@alex-Inspiron-5548:~/CL1/Codes/A4$ gcc lex.yy.c y.tab.c -w
+alex@alex-Inspiron-5548:~/CL1/Codes/A4$ ./a.out
+
+Enter input file name:     input.c

@@ -1,0 +1,21 @@
+17,Computer Programming Tutorial,48
+2,C++ Programming From Problem Analysis to Program Design 5e,78
+4,Introduction to The Theory of Comptation,89
+17,The Book of Qt,78
+79,Java Server Pages Tutorial,7
+17,Unix Tutorial,6
+17,Hadoop in Action,90
+9,UNIX and Linux System,7
+8,Administration Handbook 4e,23
+11,MySQL Tutorial,13
+89,Scala Tutorial,90
+17,Computer Programming Tutorial,90
+2,C++ Programming From Problem Analysis to Program Design 5e,78
+4,Introduction to The Theory of Comptation,89
+17,The Book of Qt,78
+79,Java Server Pages Tutorial,7
+17,Unix Tutorial,6
+17,Hadoop in Action,90
+9,UNIX and Linux System,7
+8,Administration Handbook 4e,23
+11,MySQL Tutorial,13

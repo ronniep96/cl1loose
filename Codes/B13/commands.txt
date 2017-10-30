@@ -1,0 +1,53 @@
+Start Hadoop:
+alex@alex-Inspiron-5548:~$ sudo su hduser
+[sudo] password for alex: 
+hduser@alex-Inspiron-5548:/home/alex$ /usr/local/hadoop/sbin/start-all.sh
+hduser@alex-Inspiron-5548:/home/alex$ jps
+4659 NodeManager
+4532 ResourceManager
+4136 DataNode
+6697 Jps
+4010 NameNode
+4363 SecondaryNameNode
+hduser@alex-Inspiron-5548:/home/alex$ 
+
+
+
+
+
+Different Terminal to execute:
+hduser@alex-Inspiron-5548:/home/alex/CL1/Codes/B13$ su
+Password: 
+root@alex-Inspiron-5548:/home/alex/CL1/Codes/B13# javac -classpath /usr/local/hadoop/hadoop-core-1.2.1.jar MapReduce.java
+root@alex-Inspiron-5548:/home/alex/CL1/Codes/B13# jar cvf MapReduce.jar *.class
+added manifest
+adding: MapReduce.class(in = 1735) (out= 875)(deflated 49%)
+adding: MapReduce$Map.class(in = 1871) (out= 760)(deflated 59%)
+adding: MapReduce$Reduce.class(in = 1494) (out= 578)(deflated 61%)
+root@alex-Inspiron-5548:/home/alex/CL1/Codes/B13# exit
+exit
+
+
+hduser@alex-Inspiron-5548:/home/alex/CL1/Codes/B13$ hadoop fs -ls /
+hduser@alex-Inspiron-5548:/home/alex/CL1/Codes/B13$ hadoop fs -copyFromLocal samp.txt /
+17/10/30 21:19:34 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+hduser@alex-Inspiron-5548:/home/alex/CL1/Codes/B13$ hadoop jar MapReduce.jar MapReduce /sample.txt /analysis
+
+hduser@alex-Inspiron-5548:/home/alex/CL1/Codes/B13$ hadoop fs -ls /
+17/10/30 21:22:14 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 4 items
+drwxr-xr-x   - hduser supergroup          0 2017-10-30 21:20 /analysis
+-rw-r--r--   1 hduser supergroup        661 2017-10-30 21:19 /samp.txt
+
+hduser@alex-Inspiron-5548:/home/alex/CL1/Codes/B13$ hadoop fs -cat /analysis/part-00000
+17/10/30 21:23:45 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+6	Unix Tutorial
+6	Unix Tutorial
+48	Computer Programming Tutorial
+78	The Book of Qt
+78	The Book of Qt
+90	Hadoop in Action
+90	Computer Programming Tutorial
+90	Hadoop in Action
+
+

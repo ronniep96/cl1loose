@@ -1,0 +1,6 @@
+alex@alex-Inspiron-5548:~/CL1/Codes/A3$ lex a3.l 
+alex@alex-Inspiron-5548:~/CL1/Codes/A3$ gcc lex.yy.c
+alex@alex-Inspiron-5548:~/CL1/Codes/A3$ ./a.out
+
+Enter input file name: input.c
+
